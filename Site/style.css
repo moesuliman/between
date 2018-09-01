@@ -1,0 +1,181 @@
+/** reset **/
+
+html {
+  box-sizing: border-box;
+  background: #DBDBDB;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: sans-serif;
+  line-height: 1.4;
+  color: #222;
+
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a{font-weight: 400;text-decoration: underline;color:#444; display: inline-block;}
+/** styling **/ 
+body{margin:0 auto;width:1080px}
+
+nav{
+	height:98px;
+	width:100%;
+	position: fixed;
+	top:0;
+	
+	z-index: -1;
+	background: url("../img/between.png")top left no-repeat;
+	background-size: 784px;
+	}
+	
+#container{margin-top:15%;}	
+
+.stickman{
+	position: absolute;
+	top:10;
+	margin-left:-25px;
+	z-index: 1;
+	width:249px;
+	height: 430px;
+	background: url("../img/stickman.png")center no-repeat;
+	background-size: contain;
+}
+
+.issue{margin-bottom: 1em;}
+.issue.mobile{display: none;}
+	.issue p{font-size:18px; color:#000;margin:1em 0 0 0;line-height: ;}
+	.issue img{width:31px;margin:0 0 7em 0;}
+
+
+#mix{
+	width:23%;
+	float:left;
+	background:;
+	max-width: 225px;
+	margin:4em 0 0 0;
+
+}
+	iframe{
+		position: relative;
+		box-shadow: 0 0 20px #8B3AD5;
+		z-index: 10;
+	}
+	
+#zine{
+	width:75%;
+	float:right;
+	max-width: ;
+	z-index: 100;
+	position: relative;
+}
+.gallery{
+	width: 100%;
+	overflow-x: scroll;
+	display: flex;
+	justify-content: ;
+	flex-wrap:nowrap;
+	padding-bottom: 1.5em;
+	margin-bottom: 1.5em;
+}
+	.gallery img{
+		width:100%;
+		height:auto;
+		max-width: 500px;
+		max-height: 500px;
+		margin-right: 1em;
+	}
+
+footer{
+	height:80px;
+	width:100%;
+	bottom:0;
+	clear: both;
+	z-index: -1;
+	position: fixed;
+	letter-spacing: 1px;
+	color: #F0FFE7;
+	/*background: url("../img/footer.png")bottom left no-repeat;
+	background-size: 787px;*/
+}
+
+/*scroll bars*/
+.gallery::-webkit-scrollbar{height:1em;}
+.gallery::-webkit-scrollbar-track{background: url("../img/scroll-track.png")center repeat-x;}
+.gallery::-webkit-scrollbar-thumb{ background:rgba(240,255,231,0.76); ;border-radius: 10px; }
+	/* Rectangle 7: */
+
+.info{
+	width:75%;
+	float:left;
+	margin-right:5%;
+}
+
+.info p{
+	font-size: 20px;
+}
+
+.buy{
+	width:20%;
+	float:right;
+	text-align: left;
+	background: ;
+}
+
+li{border-bottom: 1px solid rgba(0,0,0,.2);padding: 10px 0;font-size:16px;}
+
+.paypal-button-text{
+	font-weight: 300 !important;letter-spacing: 1px;
+}
+
+#paypal-button-container{
+	width:100%;
+}
+
+ /* Media query for mobile viewport */
+    @media screen and (max-width: 420px) {
+        #paypal-button-container {
+            width: 100%;
+        }
+        
+        body{width:100%;}
+        nav,footer{background-size: 400px;}
+        #mix,#zine{width:90%;clear:both;float:none; margin:0 auto;max-width: none;}
+        #mix iframe{margin:3em 0;height:420px;}
+        #mix .issue{display: none;}
+        .info,.buy{width:100%;}
+        .gallery img{width:400px;height:400px;}
+        .buy li{font-size: 20px;}
+        #container{margin-top:12%;}
+		.issue.mobile{margin-bottom: 0;display: block;}
+		.issue img{margin:0 0 3em 0;}
+		
+        .gallery{}
+        footer{position: relative;bottom:0;text-align: center;}
+        
+    }
+    
+    /* Media query for desktop viewport */
+    @media screen and (min-width: 400px) {
+        #paypal-button-container {
+            width: ;
+            height: ;
+            display: inline-block;
+        }
+    }
+    
