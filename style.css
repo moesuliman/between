@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=VT323');
+
 /** reset **/
 
 html {
   box-sizing: border-box;
-  background: #DBDBDB;
+  background: #fff;
 }
 
 *, *:before, *:after {
@@ -91,7 +93,7 @@ nav{
 	justify-content: ;
 	flex-wrap:nowrap;
 	padding-bottom: 1.5em;
-	margin-bottom: 1.5em;
+	margin-bottom: 2.5em;
 }
 	.gallery img{
 		width:100%;
@@ -117,8 +119,7 @@ footer{
 /*scroll bars*/
 .gallery::-webkit-scrollbar{height:1em;}
 .gallery::-webkit-scrollbar-track{background: url("img/scroll-track.png")center repeat-x;}
-.gallery::-webkit-scrollbar-thumb{ background:rgba(240,255,231,0.76); ;border-radius: 10px; }
-	/* Rectangle 7: */
+.gallery::-webkit-scrollbar-thumb{ background:rgba(240,255,231,0.76) ;border-radius: 10px; }
 
 .info{
 	width:75%;
@@ -127,7 +128,7 @@ footer{
 }
 
 .info p{
-	font-size: 20px;
+	font-size: 16px;
 }
 
 .buy{
@@ -137,12 +138,29 @@ footer{
 	background: ;
 }
 
-li{border-bottom: 1px solid rgba(0,0,0,.2);padding: 10px 0;font-size:16px;}
+li{
+	/*border-bottom: 1px solid rgba(0,0,0,.2);
+	padding: 10px 0;*/
+	font-size:20px;
+	font-family: 'VT323', monospace;
+}
 
+form{margin:0;}
+.buy form img{display: none;}
 .paypal-button-text{
 	font-weight: 300 !important;letter-spacing: 1px;
 }
-
+input[type=submit] {
+	font-size:20px;
+	color: #444;
+	font-family: 'VT323', monospace;	text-transform: uppercase;
+width:100%;
+background: #D8D8D8;
+box-shadow: 0 0 10px 0 #F0FFE7;
+border-radius: 4px;
+padding:1em 0;
+border:none;
+}
 #paypal-button-container{
 	width:100%;
 }
