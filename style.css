@@ -147,3 +147,35 @@ li{border-bottom: 1px solid rgba(0,0,0,.2);padding: 10px 0;font-size:16px;}
 	width:100%;
 }
 
+ /* Media query for mobile viewport */
+    @media screen and (max-width: 375px) {
+        #paypal-button-container {
+            width: 100%;
+        }
+        
+        body{width:100%;}
+        nav,footer{background-size: 400px;}
+        #mix,#zine{width:90%;clear:both;float:none; margin:0 auto;max-width: none;}
+        #mix iframe{margin:3em 0;height:420px;}
+        #mix .issue{display: none;}
+        .info,.buy{width:100%;}
+        .gallery img{width:400px;height:400px;}
+        .buy li{font-size: 20px;}
+        #container{margin-top:12%;}
+		.issue.mobile{margin-bottom: 0;display: block;}
+		.issue img{margin:0 0 3em 0;}
+		
+        .gallery{}
+        footer{position: relative;bottom:0;text-align: center;}
+        
+    }
+    
+    /* Media query for desktop viewport */
+    @media screen and (min-width: 400px) {
+        #paypal-button-container {
+            width: ;
+            height: ;
+            display: inline-block;
+        }
+    }
+    
