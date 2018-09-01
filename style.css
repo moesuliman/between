@@ -118,6 +118,7 @@ footer{
 .gallery::-webkit-scrollbar{height:1em;}
 .gallery::-webkit-scrollbar-track{background: url("img/scroll-track.png")center repeat-x;}
 .gallery::-webkit-scrollbar-thumb{ background:rgba(240,255,231,0.76); ;border-radius: 10px; }
+	/* Rectangle 7: */
 
 .info{
 	width:75%;
@@ -133,6 +134,7 @@ footer{
 	width:20%;
 	float:right;
 	text-align: left;
+	background: ;
 }
 
 li{border-bottom: 1px solid rgba(0,0,0,.2);padding: 10px 0;font-size:16px;}
@@ -146,7 +148,7 @@ li{border-bottom: 1px solid rgba(0,0,0,.2);padding: 10px 0;font-size:16px;}
 }
 
  /* Media query for mobile viewport */
-    @media screen and (max-width: 375px) {
+    @media screen and (max-width: 420px) {
         #paypal-button-container {
             width: 100%;
         }
