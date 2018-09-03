@@ -4,7 +4,7 @@
 
 html {
   box-sizing: border-box;
-  background: #fff;
+  background: #DBDBDB;
 }
 
 *, *:before, *:after {
@@ -17,7 +17,7 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   font-weight: 400;
   font-size: 14px;
   font-family: sans-serif;
-  line-height: 1.4;
+  line-height: 1.5;
   color: #222;
 
 }
@@ -33,35 +33,44 @@ img {
 
 a{font-weight: 400;text-decoration: underline;color:#444; display: inline-block;}
 /** styling **/ 
-body{margin:0 auto;width:1080px}
+body{margin:0 auto;width:;}
 
 nav{
 	height:98px;
 	width:100%;
 	position: fixed;
 	top:0;
-	
 	z-index: -1;
-	background: url("img/between.png")top left no-repeat;
+	background: url("img/between.svg")top center no-repeat;
 	background-size: 784px;
+	background-position-y: 100%;
+
 	}
 	
-#container{margin-top:15%;}	
+.container{margin:0 auto;width:1080px;}	
+.container:after{  
+	content: "";
+	display: table;
+	clear: both;
+	}
+
+.container.z{margin-top:150px; margin-bottom: 6em;}
+.container.b{margin-top:6em;}
 
 .stickman{
 	position: absolute;
-	top:10;
-	margin-left:-25px;
+	top:33;
+	margin-left:-10px;
 	z-index: 1;
-	width:249px;
-	height: 430px;
-	background: url("img/stickman.png")center no-repeat;
+	width:108px;
+	height: 187px;
+	background: url("img/stickman.svg")center no-repeat;
 	background-size: contain;
 }
 
 .issue{margin-bottom: 1em;}
 .issue.mobile{display: none;}
-	.issue p{font-size:18px; color:#000;margin:1em 0 0 0;line-height: ;}
+	.issue p{font-size:18px; color:#000;margin: 0;line-height: ;}
 	.issue img{width:31px;margin:0 0 7em 0;}
 
 
@@ -70,7 +79,7 @@ nav{
 	float:left;
 	background:;
 	max-width: 225px;
-	margin:4em 0 0 0;
+	margin:0;
 
 }
 	iframe{
@@ -102,23 +111,34 @@ nav{
 		max-height: 500px;
 		margin-right: 1em;
 	}
+hr{clear: both;width: 100%;border:none;height: 1px;background:#ccc;}
 
+
+/** BOOK **/
+#book{width:100%;margin:0 auto;display: flex;flex-wrap: nowrap;}
+#book .gallery{display:inline-flex; flex-wrap:wrap;width:50%;height: 65%;float:left;overflow-x: hidden;overflow-y: scroll;}
+#book .gallery img{margin:0 0 1em 0;}
+.bookblock{width:40%; margin-left: 10%;}
+#book .info{float:none; width:100%;}
+#book .buy{float:none;width:100%;}
 footer{
-	height:80px;
+	height:100px;
 	width:100%;
 	bottom:0;
 	clear: both;
 	z-index: -1;
-	position: fixed;
+	position: ;
 	letter-spacing: 1px;
 	color: #F0FFE7;
-	/*background: url("img/footer.png")bottom left no-repeat;
-	background-size: 787px;*/
-}
+	background: url("img/between.svg")bottom center no-repeat;
+	background-size: 80%;
+	background-size: 784px;
+	background-position-y: -50%;}
 
 /*scroll bars*/
 .gallery::-webkit-scrollbar{height:1em;}
 .gallery::-webkit-scrollbar-track{background: url("img/scroll-track.png")center repeat-x;}
+#book .gallery::-webkit-scrollbar-track{background: url("img/scroll-track.png")center repeat-y;}
 .gallery::-webkit-scrollbar-thumb{ background:rgba(240,255,231,0.76) ;border-radius: 10px; }
 
 .info{
@@ -156,7 +176,7 @@ input[type=submit] {
 	font-family: 'VT323', monospace;	text-transform: uppercase;
 width:100%;
 background: #D8D8D8;
-box-shadow: 0 0 10px 0 #F0FFE7;
+box-shadow: 0 0 10px 0 #E9FFDD;
 border-radius: 4px;
 padding:1em 0;
 border:none;
@@ -179,7 +199,7 @@ border:none;
         .info,.buy{width:100%;}
         .gallery img{width:400px;height:400px;}
         .buy li{font-size: 20px;}
-        #container{margin-top:12%;}
+        .container{margin-top:12%;}
 		.issue.mobile{margin-bottom: 0;display: block;}
 		.issue img{margin:0 0 3em 0;}
 		
