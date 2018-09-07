@@ -47,8 +47,8 @@ nav{
 	position: absolute;
 	top:0;
 	z-index: -1;
-	background: url("img/between.svg")top center no-repeat;
-	background-size: 100% 100%;
+	background: url("img/between.svg")top left no-repeat;
+	background-size:contain;
 	background-position-y: 0%;
 
 	}
@@ -56,6 +56,7 @@ nav{
 .container{
 	margin:0 auto;
 /* 	width:1080px; */
+	width:100%;
 	padding:0 10rem;
 	}	
 .container:after{  
@@ -64,8 +65,8 @@ nav{
 	clear: both;
 	}
 
-.container.z{margin-top:150px; margin-bottom: 6em;}
-.container.b{margin:6em auto;}
+.container.z{margin-top:150px; margin-bottom: 6em; }
+.container.b{margin:6em auto; }
 
 .stickman{
 	position: absolute;
@@ -88,7 +89,7 @@ nav{
 	float:left;
 	background:;
 	max-width: 225px;
-	margin:0;
+	margin:0 5% 0 0;
 
 }
 	iframe{
@@ -107,19 +108,21 @@ nav{
 	
 #zine{
 	width:75%;
-	float:right;
+	min-width: ;
+	float:left;
 	max-width: ;
 	z-index: 100;
 	position: relative;
 }
+#zine .gallery{margin-top:-50px;}
 .gallery{
 	width: 100%;
 	overflow-x: scroll;
 	display: flex;
 	justify-content: ;
 	flex-wrap:nowrap;
-	padding-bottom: 2em;
-	margin-bottom: 2em;
+	padding-bottom: 2.5em;
+	margin-bottom: 2.5em;
 }
 	.gallery img{
 		width:100%;
@@ -169,7 +172,9 @@ footer{
 	font:lighter normal 1.25rem/1.625rem ;
 	letter-spacing: -.00313rem;
 }
+.info a{font-family: 'VT323', monospace; text-transform: uppercase;font-size: 1em; text-decoration: ;letter-spacing: .05rem;color:#8B3AD5; cursor: pointer;}
 
+.info h4 span{text-align: left; padding: 0;}
 .buy{
 	width:20%;
 	float:right;
