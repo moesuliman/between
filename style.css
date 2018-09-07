@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=VT323');
-
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,500');
 /** reset **/
 
 html {
   box-sizing: border-box;
-  background: #DBDBDB;
+  background: #DBDBDB; 
+/*   background: #fff; */
 }
 
 *, *:before, *:after {
@@ -20,6 +21,11 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul {
   line-height: 1.5;
   color: #222;
 
+}
+
+h4{font-size:14px; color:#000;margin: 0;line-height: ; text-transform: capitalize;width:100%; display: block;}
+h4 em{display: inline-block;width:50%;font-style: normal;}
+h4 span{	font-family: 'VT323', monospace; text-transform: uppercase;padding-left:.5em;font-size: 1.5em; color: #EF503A; display: inline-block;width:50%;text-align: right;
 }
 
 ol, ul {
@@ -38,16 +44,20 @@ body{margin:0 auto;width:;}
 nav{
 	height:98px;
 	width:100%;
-	position: fixed;
+	position: absolute;
 	top:0;
 	z-index: -1;
 	background: url("img/between.svg")top center no-repeat;
-	background-size: 784px;
-	background-position-y: 100%;
+	background-size: 100% 100%;
+	background-position-y: 0%;
 
 	}
 	
-.container{margin:0 auto;width:1080px;}	
+.container{
+	margin:0 auto;
+/* 	width:1080px; */
+	padding:0 10rem;
+	}	
 .container:after{  
 	content: "";
 	display: table;
@@ -55,7 +65,7 @@ nav{
 	}
 
 .container.z{margin-top:150px; margin-bottom: 6em;}
-.container.b{margin-top:6em;}
+.container.b{margin:6em auto;}
 
 .stickman{
 	position: absolute;
@@ -70,8 +80,7 @@ nav{
 
 .issue{margin-bottom: 1em;}
 .issue.mobile{display: none;}
-	.issue p{font-size:18px; color:#000;margin: 0;line-height: ;}
-	.issue img{width:31px;margin:0 0 7em 0;}
+	.issue img{width:31px;margin:0 0 1em 0;}
 
 
 #mix{
@@ -86,7 +95,15 @@ nav{
 		position: relative;
 		box-shadow: 0 0 20px #8B3AD5;
 		z-index: 10;
+		margin-bottom: 2em;
 	}
+	
+	.feat.two{
+		width:225px;
+		height:225px;
+		background:#000;
+		box-shadow: 0 0 20px #8B3AD5;
+		}
 	
 #zine{
 	width:75%;
@@ -101,14 +118,14 @@ nav{
 	display: flex;
 	justify-content: ;
 	flex-wrap:nowrap;
-	padding-bottom: 1.5em;
-	margin-bottom: 2.5em;
+	padding-bottom: 2em;
+	margin-bottom: 2em;
 }
 	.gallery img{
 		width:100%;
 		height:auto;
-		max-width: 500px;
-		max-height: 500px;
+		max-width: 600px;
+		max-height: 480px;
 		margin-right: 1em;
 	}
 hr{clear: both;width: 100%;border:none;height: 1px;background:#ccc;}
@@ -130,10 +147,10 @@ footer{
 	position: ;
 	letter-spacing: 1px;
 	color: #F0FFE7;
-	background: url("img/between.svg")bottom center no-repeat;
+	background: url("img/between.svg")bottom right no-repeat;
 	background-size: 80%;
 	background-size: 784px;
-	background-position-y: -50%;}
+	background-position-y: 0%;}
 
 /*scroll bars*/
 .gallery::-webkit-scrollbar{height:1em;}
@@ -148,7 +165,9 @@ footer{
 }
 
 .info p{
-	font-size: 16px;
+	font-size: 18px;
+	font:lighter normal 1.25rem/1.625rem ;
+	letter-spacing: -.00313rem;
 }
 
 .buy{
@@ -156,6 +175,7 @@ footer{
 	float:right;
 	text-align: left;
 	background: ;
+	
 }
 
 li{
@@ -175,11 +195,11 @@ input[type=submit] {
 	color: #444;
 	font-family: 'VT323', monospace;	text-transform: uppercase;
 width:100%;
-background: #D8D8D8;
-box-shadow: 0 0 10px 0 #E9FFDD;
-border-radius: 4px;
+background: #DBDBDB;
+box-shadow: 0 0 4px 0 #E9FFDD;
+border:1px solid #E9FFDD;
+border-radius: 0px;
 padding:1em 0;
-border:none;
 }
 #paypal-button-container{
 	width:100%;
