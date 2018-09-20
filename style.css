@@ -116,6 +116,7 @@ nav .logo{
 }
 	iframe{
 		position: relative;
+		display: block;
 		box-shadow: 0 0 20px #8B3AD5;
 		z-index: 10;
 		margin: 0 auto;
