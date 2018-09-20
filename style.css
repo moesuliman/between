@@ -93,16 +93,18 @@ nav .logo{
 .container.b{margin:6em auto; }
 
 .stickman{
-	position: absolute;
-	top:20;
-	right:0;
 	z-index: 1;
 	width:50px;
 	height: 87px;
+	margin:0 auto;
 	background: url("img/stickman.svg")center no-repeat;
 	background-size: contain;
+	text-align: center
 }
-
+footer .stickman{
+	position: relative;
+	text-align: center;
+}
 .issue{margin-bottom: 1em;}
 .issue.mobile{display: none;}
 	.issue img{width:31px;margin:0 0 1em 0;}
@@ -171,6 +173,7 @@ footer{
 	text-align: center;
 	font-size: 12px;
 	line-height: 16px;
+	position: relative;
 	
 }
 
